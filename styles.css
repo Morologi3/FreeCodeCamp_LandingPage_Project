@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    position: fixed;
+}
+
+.nav-link{
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 700px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.header-left{
+    padding-right: 10px;
+    width: 60%
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+iframe{
+    margin-bottom: 30px;
+}
+
+.feature, .pricing{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    margin: 20px 1.66%;
+    width: 30%;
+    text-align: center;
+}
+
+.feature , .pricing h2{
+    font-size: 20px;
+}
+
+.pricing h3{
+    font-size: 30px
+}
+
+.feature , .pricing p{
+    font-size: 12px;
+    line-height: 20px
+}
+
+.pricing-ult{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    margin: 20px 1.66%;
+    width: 30%;
+    text-align: center;
+    background-color: #2b64bd;
+    color: #fff;
+}
+.pricing-ult h2{
+    font-size: 20px;
+}
+.pricing-ult h3{
+    font-size: 30px;
+}
+.pricing-ult p{
+    font-size: 12px;
+    line-height: 20px
+}
+
+section h2{
+    text-align: center;
+}
+
+form{
+    margin-bottom: 40px;
+}
+
+form input{
+    border-radius: 5px;
+    border: 0;
+    color: black;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.1s ease;
+    width: 100%;
+    flex: 1;
+    margin-right: 10px;
+}
+
+footer{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+@media (max-width: 480px){
+    .header-left, .header-right{
+        width: 100%;
+    }
+
+    .header-right{
+        order: 0;
+    }
+
+    .header-left{
+        order: 1;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .header-left h1{
+        display: none
+    }
+}
